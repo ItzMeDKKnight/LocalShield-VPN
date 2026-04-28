@@ -1,0 +1,18 @@
+[project]
+name = "localshield-backend"
+version = "0.1.0"
+description = "Secure backend for LocalShield VPN"
+dependencies = [
+    "cryptography>=41.0.0",
+    "keyring>=24.2.0",
+    "dnslib>=0.9.23",
+    "httpx>=0.24.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "psutil>=5.9.5",
+    "pydantic>=2.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,17 @@
+{
+  "$schema": "../gen/schemas/capability.json",
+  "identifier": "default",
+  "description": "Default permissions for LocalShield",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:app:default",
+    "core:resources:default",
+    "core:window:default",
+    "core:menu:default",
+    "core:tray:default",
+    "core:event:default",
+    "core:path:default",
+    "opener:default"
+  ]
+}

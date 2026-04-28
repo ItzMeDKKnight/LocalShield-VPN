@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #030712;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #1e1b4b, #030712);
+}
+
+#root {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Tailwind-like utilities */
+.p-6 { padding: 1.5rem; }
+.bg-gray-900 { background-color: #111827; }
+.bg-gray-950 { background-color: #030712; }
+.text-white { color: #ffffff; }
+.rounded-xl { border-radius: 0.75rem; }
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.space-y-8 > * + * { margin-top: 2rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gap-4 { gap: 1rem; }
+.w-full { width: 100%; }
+.bg-gray-800 { background-color: #1f2937; }
+.p-4 { padding: 1rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.text-sm { font-size: 0.875rem; }
+.text-gray-400 { color: #9ca3af; }
+.text-2xl { font-size: 1.5rem; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.text-green-500 { color: #22c55e; }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .8; transform: scale(1.02); }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.stat-card {
+  border: 1px solid rgba(255,255,255,0.05);
+  background: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.peer-item:hover {
+  background: rgba(55, 65, 81, 0.5);
+  transform: translateX(5px);
+}
